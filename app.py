@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 from datetime import datetime
 
+
+
 load_dotenv()
 os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
