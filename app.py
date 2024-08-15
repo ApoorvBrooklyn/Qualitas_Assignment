@@ -1,9 +1,6 @@
 import streamlit as st
 import json
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.chains import LLMChain
-from langchain.memory import ConversationBufferMemory
-from langchain.prompts import PromptTemplate
 import os
 from dotenv import load_dotenv
 import google.generativeai as genai
@@ -37,12 +34,10 @@ schema = {
     }
 }
 
-def get_llm_chain():
-    prompt_template = """
+def get_llm_response(prompt, schema, classification, asked_questions):
+    model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.3)
+    full_prompt = f"""
     You are a friendly and professional sales chatbot. Your goal is to gather comprehensive information about a customer's requirements for their business needs. Engage in a natural conversation, asking relevant questions to cover all aspects of the schema and the classification results.
-
-    Current conversation context:
-    {history}
 
     Current schema state:
     {schema}
@@ -53,28 +48,13 @@ def get_llm_chain():
     Asked questions:
     {asked_questions}
 
-    Human: {input}
+    Human: {prompt}
 
     Assistant: Based on the current context, schema state, classification results, and previously asked questions, provide an appropriate response or ask a relevant question about an aspect of the schema that hasn't been covered yet. Do not repeat questions that have already been asked. If all schema fields have been addressed, summarize the information gathered and ask if there's anything else the customer would like to add or modify.
     """
-
-    prompt = PromptTemplate(
-        input_variables=["history", "schema", "classification", "asked_questions", "input"],
-        template=prompt_template
-    )
-
-    memory = ConversationBufferMemory(input_key="input", memory_key="history")
-
-    model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.3)
     
-    chain = LLMChain(
-        llm=model,
-        prompt=prompt,
-        memory=memory,
-        verbose=True
-    )
-    
-    return chain
+    response = model.invoke(full_prompt)
+    return response.content
 
 def extract_information(text):
     global schema
@@ -93,7 +73,7 @@ def extract_information(text):
     response = model.invoke(prompt)
     
     try:
-        extracted_info = json.loads(response.text)
+        extracted_info = json.loads(response.content)
         for category in extracted_info:
             for key, value in extracted_info[category].items():
                 if value and not schema[category][key]:  # Only update if a value was extracted and the field is empty
@@ -155,14 +135,11 @@ def classification_LLM(text):
     Classification:
     """
     response = model.invoke(prompt)
-    return response.text
+    return response.content
 
 def main():
     st.set_page_config("Sales Chatbot")
     st.header("Interactive Sales Chatbot 💼")
-
-    if "chain" not in st.session_state:
-        st.session_state.chain = get_llm_chain()
 
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -212,8 +189,8 @@ def main():
                 st.session_state.conversation_ended = True
                 response = "Thank you for providing all the information. I'll summarize what we've discussed and save the details. Is there anything else you'd like to add before we conclude?"
             else:
-                response = st.session_state.chain.predict(
-                    input=prompt, 
+                response = get_llm_response(
+                    prompt=prompt, 
                     schema=json.dumps(schema, indent=2),
                     classification=st.session_state.classification_result,
                     asked_questions=", ".join(st.session_state.asked_questions)
