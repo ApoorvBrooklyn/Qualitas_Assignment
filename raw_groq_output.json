@@ -1,0 +1,470 @@
+[
+  {
+    "Category": "Classification",
+    "Sub-category": "Categories of classes to be identified",
+    "Description": "Different product types, defect categories. Crucial for developing classification algorithms. Influences sensor and processing capabilities to differentiate between various classes based on physical features.",
+    "User Answer": "Full leaf, Tips, Butts"
+  },
+  {
+    "Category": "Classification",
+    "Sub-category": "Features defining each class",
+    "Description": "Shape, size, color patterns. Guides the system's ability to recognize and categorize objects",
+    "User Answer": "Shape, size"
+  },
+  {
+    "Category": "Presence/Absence",
+    "Sub-category": "Details of objects/features to detect",
+    "Description": "Missing components, color deviations. Critical for designing detection algorithms. Influences camera resolution and processing strategies to identify presence or absence of specific features or objects.",
+    "User Answer": "Full leaf in Tips line"
+  },
+  {
+    "Category": "Presence/Absence",
+    "Sub-category": "Acceptable variance levels",
+    "Description": "Variance up to 5%. Sets the system's tolerance for detection errors, affecting the sensitivity and specificity of the algorithms. Impacts the choice of imaging technologies for accurate feature detection.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "BIZ_OBJ",
+    "Sub-category": "Problem Statement",
+    "Description": "A brief Problem Statement of the requirement",
+    "User Answer": "The current problem is that manpower is deployed near the conveyor to pick full leaf from tips final product."
+  },
+  {
+    "Category": "BIZ_OBJ",
+    "Sub-category": "Current Inspection Methods",
+    "Description": "Description of the client's current methods for inspection.",
+    "User Answer": "Manpower is deployed near the conveyor to pick full leaf from tips final product."
+  },
+  {
+    "Category": "BIZ_OBJ",
+    "Sub-category": "Challenges with Current System",
+    "Description": "Specific issues or challenges faced with the current inspection methods.",
+    "User Answer": "The current system requires manpower to pick full leaf from tips final product, which is inefficient."
+  },
+  {
+    "Category": "BIZ_OBJ",
+    "Sub-category": "Desired Improvements",
+    "Description": "Improvements the client wishes to achieve with the new system.",
+    "User Answer": "The client wants to integrate a vision-based robotic picker to differentiate and pick only full leaf from tips line."
+  },
+  {
+    "Category": "BIZ_OBJ",
+    "Sub-category": "Budget Constraints",
+    "Description": "The client's budget for the system to tailor a cost-effective solution.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "BIZ_OBJ",
+    "Sub-category": "Key Performance Indicators (KPIs)",
+    "Description": "Metrics to measure the success of the vision system.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "BIZ_OBJ",
+    "Sub-category": "Return on Investment (ROI) Criteria",
+    "Description": "Client's criteria for ROI on the vision system.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "BIZ_OBJ",
+    "Sub-category": "Future Scalability Needs",
+    "Description": "Anticipated future requirements or expansions.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "BIZ_OBJ",
+    "Sub-category": "Integration with Existing Systems",
+    "Description": "How the vision system needs to integrate with current business systems.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "BIZ_OBJ",
+    "Sub-category": "Compliance Requirements",
+    "Description": "Any regulatory or industry compliance requirements.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "BIZ_OBJ",
+    "Sub-category": "Environmental Impact Considerations",
+    "Description": "Any environmental goals or standards to adhere to.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Product Name/ID",
+    "Description": "Unique Name or identifier for the product that needs to be inspected.",
+    "User Answer": "Tobacco full leaf"
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Product Description",
+    "Description": "Brief overview of the product, its use, and key features.",
+    "User Answer": "Tobacco full leaf is a product that needs to be inspected to differentiate and pick only full leaf from tips line."
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Product Image Upload",
+    "Description": "Option for users to upload images of the product for visual reference.",
+    "User Answer": "Images of tobacco full leaf are provided for reference."
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Inspection Purpose",
+    "Description": "Brief description of why the product needs inspection (e.g., quality control, compliance, etc.).",
+    "User Answer": "The product needs inspection to differentiate and pick only full leaf from tips line."
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Dimensions",
+    "Description": "Min and Max Dimensions of the product.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Usage Context",
+    "Description": "Description of where and how the product is used.",
+    "User Answer": "The product is used in the tobacco threshing operation."
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Criticality",
+    "Description": "Importance and Role of the inspection process in its usage context.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Variant Names/IDs",
+    "Description": "Unique identifiers for each variant.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Variant Descriptions",
+    "Description": "Descriptions highlighting differences between variants.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Size Range",
+    "Description": "Minimum and maximum dimensions for all variants.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Variant-Specific Features",
+    "Description": "Notable features unique to certain variants.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Variant Images",
+    "Description": "Option to upload images for",
+    "User Answer": "None"
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Production Volume",
+    "Description": "Annual/Monthly Production Voume (total as well as Variant wise breakup)",
+    "User Answer": "None"
+  },
+  {
+    "Category": "PROD_VARIANT_INFO",
+    "Sub-category": "Product 3D Model",
+    "Description": "Option to upload a 3D model of the product.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Material Handling Method",
+    "Description": "How products are transported to the inspection area.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Loading",
+    "Description": "Description of how parts are loaded into the inspection system.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Handling Speed",
+    "Description": "Speed at which products are handled or moved.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Part Movement During Inspection",
+    "Description": "Specifies whether the part is moving or stationary during the inspection process.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "FAIL/Rejection Action (NG components)",
+    "Description": "How rejected (Not Good) components are managed and what action should be taken.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "PASS Action",
+    "Description": "What happens when a part is passed by the vision system.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Variant Change Over",
+    "Description": "How the system manages changes between different product variants.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Mechanical Drawings",
+    "Description": "Option to upload or describe mechanical drawings related to material handling.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Images/Video of the Existing Line",
+    "Description": "Visual reference of the current material handling setup.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Variants",
+    "Description": "List all different variants in the scope of this inspection and mention any out-of-scope variants.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Cycle Time",
+    "Description": "Describe cycle time and inspection speed.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Inputs to Vision System",
+    "Description": "Inputs from external systems interfaced with the vision system.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Outputs from Vision System",
+    "Description": "Outputs like PNP, TTL, EthernetIP, and interfacing details.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "LOCATE FAILED/UNKNOWN/ERROR Action",
+    "Description": "What happens in scenarios of failed, unknown, or error detections.",
+    "User Answer": "Not decided"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Other Requirements",
+    "Description": "Open text for any other material handling requirements.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Special Handling Requirements",
+    "Description": "Specific conditions required for handling, like temperature control or fragility considerations.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Specifications/Standards Compliance",
+    "Description": "List of specific standards or specifications the system must comply with.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "MATERIAL_HANDLING",
+    "Sub-category": "Material Standards",
+    "Description": "Specifies the material standards required for the components.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "SOFTWARE",
+    "Sub-category": "Operator Permitted Actions",
+    "Description": "List of actions the operator is allowed to perform.",
+    "User Answer": "Not decided"
+  },
+  {
+    "Category": "SOFTWARE",
+    "Sub-category": "Operator Restricted Actions",
+    "Description": "Actions the operator is not allowed to perform.",
+    "User Answer": "Not decided"
+  },
+  {
+    "Category": "SOFTWARE",
+    "Sub-category": "Variant Selection Mechanism",
+    "Description": "How variant information is communicated to the vision system.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "SOFTWARE",
+    "Sub-category": "Feedback Mechanisms",
+    "Description": "Any operator alerts or notifications.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "SOFTWARE",
+    "Sub-category": "Language Preferences",
+    "Description": "Preferred languages for the interface.",
+    "User Answer": "Not decided"
+  },
+  {
+    "Category": "SOFTWARE",
+    "Sub-category": "Database Integration",
+    "Description": "Details on the integration with external databases for data management.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "SOFTWARE",
+    "Sub-category": "ERP Integration",
+    "Description": "Information on integration with Enterprise Resource Planning systems.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "SOFTWARE",
+    "Sub-category": "Image Backup Requirements",
+    "Description": "Parameters for image data backup.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "SOFTWARE",
+    "Sub-category": "Backup Storage",
+    "Description": "Preferred backup storage solution.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "SOFTWARE",
+    "Sub-category": "Production Line Feedback",
+    "Description": "Result feedback to be communicated to the production line.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "CUSTOMER_DEPENDENCY",
+    "Sub-category": "Space Requirements",
+    "Description": "Information on the physical space needed for the system.",
+    "User Answer": "Space requirement is 100 sq meters of free plot"
+  },
+  {
+    "Category": "CUSTOMER_DEPENDENCY",
+    "Sub-category": "Internet Connectivity",
+    "Description": "What kind of internet connectivity can be provided for remote training and testing and later for troubleshooting",
+    "User Answer": "Not yet decided"
+  },
+  {
+    "Category": "CUSTOMER_DEPENDENCY",
+    "Sub-category": "Power",
+    "Description": "Details about power supply and network connectivity requirements.",
+    "User Answer": "230 v 130 HZ Power supply any network connectivity with AWS server at backend"
+  },
+  {
+    "Category": "CUSTOMER_DEPENDENCY",
+    "Sub-category": "Test and Train Samples",
+    "Description": "Whether the customer can provide sufficient sample products for training the system as well as for testing and system calibration.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "CUSTOMER_DEPENDENCY",
+    "Sub-category": "On-site Support",
+    "Description": "Information about the level of on-site support and training required for the client.",
+    "User Answer": "The client requests a visit to their site to understand the integration of vision-based robotic picking in their processes."
+  },
+  {
+    "Category": "CUSTOMER_DEPENDENCY",
+    "Sub-category": "Environmental Conditions",
+    "Description": "Specific environmental factors where the system will be deployed, such as temperature, humidity, lighting, and contaminants.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "CUSTOMER_DEPENDENCY",
+    "Sub-category": "User Profiles and Skill Levels",
+    "Description": "Technical expertise and training requirements of the end-users of the system.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "CUSTOMER_DEPENDENCY",
+    "Sub-category": "Regulatory and Compliance Requirements",
+    "Description": "Industry-specific regulations or standards the system must comply with.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "CUSTOMER_DEPENDENCY",
+    "Sub-category": "Maintenance and Support Requirements",
+    "Description": "Maintenance needs, expected system lifespan, and support requirements.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "CUSTOMER_DEPENDENCY",
+    "Sub-category": "Performance Metrics and Success Criteria",
+    "Description": "Specific performance metrics expected from the system and how success is defined.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "CUSTOMER_DEPENDENCY",
+    "Sub-category": "Risk Assessment",
+    "Description": "Potential risks or challenges in implementing the system for proactive planning.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "ACCEPTANCE",
+    "Sub-category": "Acceptance Test Criteria",
+    "Description": "Specific criteria that the vision system must meet for acceptance.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "ACCEPTANCE",
+    "Sub-category": "Trial Period",
+    "Description": "The duration of the testing phase before final acceptance.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "ACCEPTANCE",
+    "Sub-category": "Sample Size for Testing",
+    "Description": "Number of samples to be tested during the acceptance phase.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "ACCEPTANCE",
+    "Sub-category": "Failure Thresholds",
+    "Description": "Defined limits for what constitutes a failure during testing.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "ACCEPTANCE",
+    "Sub-category": "Reporting Requirements",
+    "Description": "Details on reporting format and frequency during the trial period.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "ACCEPTANCE",
+    "Sub-category": "On-Site Evaluation",
+    "Description": "Requirement for on-site testing as part of the acceptance process.",
+    "User Answer": "The client requests a visit to their site to understand the integration of vision-based robotic picking in their processes."
+  },
+  {
+    "Category": "ACCEPTANCE",
+    "Sub-category": "Post-Implementation Review",
+    "Description": "Schedule and criteria for reviewing the system's performance post-implementation.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "ACCEPTANCE",
+    "Sub-category": "User Training Completion",
+    "Description": "Confirmation that user training has been successfully completed.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "ACCEPTANCE",
+    "Sub-category": "System Integration Test",
+    "Description": "Testing the system's integration with existing processes and equipment.",
+    "User Answer": "None"
+  },
+  {
+    "Category": "ACCEPTANCE",
+    "Sub-category": "Final Acceptance Sign-off",
+    "Description": "Process for formally accepting the system, including any necessary documentation or approvals.",
+    "User Answer": "None"
+  }
+]

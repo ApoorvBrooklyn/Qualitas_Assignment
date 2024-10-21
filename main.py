@@ -710,7 +710,7 @@ def chat_interaction():
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    if prompt := st.chat_input("What is the answer?"):
+    if prompt := st.chat_input("What is the answer?", key="chat_1"):
         st.chat_message("user").markdown(prompt)
         st.session_state.messages.append({"role": "user", "content": prompt})
 
